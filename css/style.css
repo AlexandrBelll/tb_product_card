@@ -194,6 +194,7 @@ body {
   cursor: pointer;
   transition: var(--transition);
   color: var(--color-btn-text);
+  will-change: transform;
 }
 
 @media (hover: hover) {
@@ -201,6 +202,9 @@ body {
     background-color: var(--color-primary-hover);
     color: var(--color-btn-text-hover);
   }
+}
+.product-card__cart-btn:active {
+    transform: scale(0.96);
 }
 
 .visually-hidden {
