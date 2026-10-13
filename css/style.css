@@ -31,6 +31,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -195,9 +196,11 @@ body {
   color: var(--color-btn-text);
 }
 
-.product-card__cart-btn:hover {
-  background-color: var(--color-primary-hover);
-  color: var(--color-btn-text-hover);
+@media (hover: hover) {
+  .product-card__cart-btn:hover {
+    background-color: var(--color-primary-hover);
+    color: var(--color-bg-white);
+  }
 }
 
 .visually-hidden {
