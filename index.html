@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Карточка товара</title>
+  <link rel="preconnect" href="https://googleapis.com">
+  <link rel="preconnect" href="https://gstatic.com" crossorigin>
+  <link href="https://googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <main class="container">
+    <article class="product-card">
+      
+      <div class="product-card__preview">
+        <img src="img/ananasoviy_ulun.jpg" alt="Ананасовый улун" class="product-card__img">
+      </div>
+
+      <section class="product-card__details">
+        <span class="product-card__category">Китайский светлый ароматизированный улун</span>
+        <h1 class="product-card__caption">Ананасовый улун</h1>
+        
+        <div class="product-card__sku-block">
+          <span>Арт. <strong class="js-product-sku">01306</strong></span>
+        </div>
+
+        <div class="product-card__text">
+          <p>Светлый Фуцзяньский улун с ароматом ананаса. В сухом виде — красивый крупный лист изумрудного цвета, скруткой листа напоминающий Те Гуань Инь.</p>
+        </div>
+
+        <div class="product-card__variants">
+          <div class="product-card__variants-list">
+            
+            <label class="product-card__variant-label">
+              <input type="radio" name="weight" value="100" checked class="product-card__input visually-hidden" 
+                     data-sku="01306" data-price="326,40 ₽" data-old="349,20 ₽">
+              <span class="product-card__variant-btn">100 г</span>
+            </label>
+            
+            <label class="product-card__variant-label">
+              <input type="radio" name="weight" value="500" class="product-card__input visually-hidden" 
+                     data-sku="01307" data-price="1 432 ₽" data-old="1 646 ₽">
+              <span class="product-card__variant-btn">500 г</span>
+            </label>
+
+            <label class="product-card__variant-label">
+              <input type="radio" name="weight" value="1000" class="product-card__input visually-hidden" 
+                     data-sku="01308" data-price="2 064 ₽" data-old="2 592 ₽">
+              <span class="product-card__variant-btn">1000 г</span>
+            </label>
+
+            <label class="product-card__variant-label">
+              <input type="radio" name="weight" value="5000" class="product-card__input visually-hidden" 
+                     data-sku="01309" data-price="6 320 ₽" data-old="8 710 ₽">
+              <span class="product-card__variant-btn">5000 г</span>
+            </label>
+
+          </div>
+        </div>
+
+        <div class="product-card__buy-section">
+          <div class="product-card__price-box">
+            <span class="product-card__price-now product-card__price-now--accent js-product-price">326,40 ₽</span>
+            <del class="product-card__price-before js-product-old-price">349,20 ₽</del>
+          </div>
+          
+          <button type="button" class="product-card__cart-btn">В корзину</button>
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
