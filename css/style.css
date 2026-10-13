@@ -199,7 +199,7 @@ body {
 @media (hover: hover) {
   .product-card__cart-btn:hover {
     background-color: var(--color-primary-hover);
-    color: var(--color-bg-white);
+    color: var(--color-btn-text-hover);
   }
 }
 
